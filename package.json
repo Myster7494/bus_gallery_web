@@ -2,6 +2,7 @@
   "name": "bus_gallery_web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://myster7494.github.io/bus_gallery_web",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
