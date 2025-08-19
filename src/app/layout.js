@@ -1,6 +1,7 @@
 // src/app/layout.js
 import { Inter, Noto_Sans_TC } from "next/font/google"; // 引入 Noto Sans TC
 import "./globals.css";
+import Link from "next/link";
 
 // 設定英文字體
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
             <header className="bg-white shadow-md">
                 <nav className="container mx-auto px-6 py-4">
                     <h1 className="text-2xl font-bold text-gray-800">
-                        <a href="/">桃園公車站</a>
+                        <Link href="/">桃園公車站</Link>
                     </h1>
                 </nav>
             </header>
