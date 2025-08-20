@@ -1,11 +1,8 @@
-// tailwind.config.js
+// tailwind.config.mjs
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-    content: [
-        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-        "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    ],
+export default {
+    // Tailwind CSS v4 不需要 content 屬性，它會自動掃描您的專案。
+    // 只需要在這裡定義主題擴展即可。
     theme: {
         extend: {
             fontFamily: {
@@ -14,5 +11,4 @@ module.exports = {
             },
         },
     },
-    plugins: [],
 };
