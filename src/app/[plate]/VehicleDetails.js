@@ -124,6 +124,7 @@ export default function VehicleDetails({ plate }) {
                                     height={image.height || 720}
                                     // 核心變更：移除了 'transition-transform duration-300 group-hover:scale-105'
                                     className="w-full h-auto object-cover"
+                                    loading="lazy"
                                 />
                             </div>
                             <div className="p-4 flex flex-col flex-grow">
