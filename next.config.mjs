@@ -7,12 +7,12 @@ const nextConfig = {
     output: 'export',
 
     // 為 GitHub Pages 設定正確的資源路徑
-    // 將 'bus_gallery_web' 替換為您的網站儲存庫名稱
+    // 'bus_gallery_web' 是您的網站儲存庫名稱
     assetPrefix: isProd ? '/bus_gallery_web/' : '',
     basePath: isProd ? '/bus_gallery_web' : '',
 
     images: {
-        // 關閉圖片優化以兼容靜態導出
+        // 必須設定為 true，以便與 `output: 'export'` 兼容
         unoptimized: true,
 
         // 允許從 GitHub Raw 載入圖片
@@ -20,6 +20,8 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'raw.githubusercontent.com',
+                port: '',
+                pathname: '/TYBusStation/bus_gallery_assets/master/**',
             },
         ],
     },
